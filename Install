@@ -1,0 +1,33 @@
+#!/bin/bash
+
+FILES=".gemrc
+.irbrc
+.vimrc
+"
+DIRECTORY=$(cd `dirname $0` && pwd)
+
+if [ $DIRECTORY != $HOME/.vim ]; then
+  echo moving directory to .vim folder
+  rm .vim -fr
+  mv $DIRECTORY $HOME/.vim
+  cd $HOME/.vim
+fi
+        
+for f in $FILES; do
+  if [ ! -e $HOME/$f ]; then
+    echo adding link to $f
+    ln -s $HOME/.vim/$f $HOME/$f
+  else
+    echo $f already exists in $HOME/$f
+  fi
+done
+
+echo initalising git submodules
+git submodule init
+echo git submodules initalised
+
+echo updating submodules
+git submodule update
+echo submodules updated
+
+echo install complete
