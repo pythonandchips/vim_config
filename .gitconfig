@@ -1,0 +1,9 @@
+[user]
+	name = Colin Gemmell
+	email = pythonandchips@gmail.com
+[diff]
+  external = git_diff_wrapper
+[pager]
+  diff =
+[merge]
+	tool = gvimdiff

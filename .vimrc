@@ -41,12 +41,16 @@ map <C-H> <C-W>h
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
+map <Up> :cprev <CR>
+map <Down> :cnext <CR>
 "custom mappings
 map <silent> <LocalLeader>w <ESC>:w<CR>
 nnoremap <Leader>r G=gg<C-o><C-o>
 nnoremap <Leader>P "+p<CR>
 nnoremap <Leader>Y "+y<CR>
 nnoremap <Leader>YY "+yy<CR>
+"diff options
+:set diffopt+=iwhite
 
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
