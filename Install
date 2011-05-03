@@ -3,6 +3,7 @@
 FILES=".gemrc
 .irbrc
 .vimrc
+.gitconfig
 "
 DIRECTORY=$(cd `dirname $0` && pwd)
 
