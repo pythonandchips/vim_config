@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'irb/completion'
 require 'irb/ext/save-history'
-["wirble", "interactive_editor"].each do |gem|
+["wirble", "interactive_editor", "hirb"].each do |gem|
   %x{gem install #{gem} --no-ri --no-rdoc} unless Gem.available?(gem)
 end
 
@@ -18,4 +18,7 @@ colors = Wirble::Colorize.colors.merge({
  :symbol_prefix => :purple
 })
 Wirble::Colorize.colors = colors
+require 'hirb'
+Hirb.enable
 
+Hirb::Formatter.dynamic_config['ActiveRecord::Base']

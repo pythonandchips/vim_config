@@ -51,6 +51,7 @@ nnoremap <Leader>Y "+y<CR>
 nnoremap <Leader>YY "+yy<CR>
 "diff options
 :set diffopt+=iwhite
+"cucumber.vim mappings
 
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
