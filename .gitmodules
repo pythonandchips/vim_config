@@ -22,6 +22,3 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/scrooloose/snipmate-snippets.git
-[submodule "bundle/vim-cucumber"]
-	path = vim-cucumber
-	url = git@github.com:pythonandchips/vim-cucumber.git
