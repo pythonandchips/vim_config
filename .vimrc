@@ -52,6 +52,6 @@ nnoremap <Leader>YY "+yy<CR>
 "diff options
 :set diffopt+=iwhite
 autocmd! bufwritepost .vimrc source ~/.vimrc
-
+autocmd BufWritePost,FileWritePost * silent call AutoTag ()
 "set colour scheme
 colorscheme vividchalk
