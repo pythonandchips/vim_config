@@ -31,3 +31,6 @@
 [submodule "bundle/autotag"]
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
+[submodule "bundle/ruby_focused_unit_test"]
+	path = bundle/ruby_focused_unit_test
+	url = https://github.com/pythonandchips/ruby_focused_unit_test_vim.git
