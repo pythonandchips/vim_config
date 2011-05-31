@@ -13,7 +13,7 @@ if [ $DIRECTORY != $HOME/.vim ]; then
   mv $DIRECTORY $HOME/.vim
   cd $HOME/.vim
 fi
-        
+
 for f in $FILES; do
   if [ ! -e $HOME/$f ]; then
     echo adding link to $f
@@ -30,5 +30,15 @@ echo git submodules initalised
 echo updating submodules
 git submodule update
 echo submodules updated
+
+BASH_SOURCES="aliases
+bash_customise
+"
+for f in $BASH_SOURCES; do
+  if  ! grep -Fxq "source ~/.vim/$f" ~/.bashrc 
+  then
+    echo "source ~/.vim/$f" >> ~/.bashrc
+  fi
+done
 
 echo install complete
