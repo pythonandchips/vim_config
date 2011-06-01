@@ -62,7 +62,6 @@ BASH_SOURCES="aliases
 bash_customise
 "
 
-
 for f in $BASH_SOURCES; do
   if  ! grep -Fxq "source ~/.vim/$f" ~/.bashrc 
   then
