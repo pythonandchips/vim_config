@@ -1,18 +1,37 @@
 #!/bin/bash
 
-FILES=".gemrc
-.irbrc
-.vimrc
-.gitconfig
-"
+#move install dir to .vim folder
 DIRECTORY=$(cd `dirname $0` && pwd)
-
 if [ $DIRECTORY != $HOME/.vim ]; then
   echo moving directory to .vim folder
   rm .vim -fr
   mv $DIRECTORY $HOME/.vim
   cd $HOME/.vim
 fi
+#install enviroment dependacies
+echo installing system dependancies requirements
+sudo apt-get install curl
+sudo apt-get install vim-gnome
+sudo apt-get install ruby
+sudo apt-get install rubygems
+sudo apt-get install irb
+
+#install rvm
+if [ ! -e $HOME/.rvm ]; then
+  echo installing rvm
+  cd $HOME
+  bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+  cd $HOME/.vim
+else
+  echo skip install rvm, .rvm already exits
+fi
+
+#setup dotfiles
+FILES=".gemrc
+.irbrc
+.vimrc
+.gitconfig
+"
 
 for f in $FILES; do
   if [ ! -e $HOME/$f ]; then
@@ -23,6 +42,7 @@ for f in $FILES; do
   fi
 done
 
+#setup vim plugins
 echo initalising git submodules
 git submodule init
 echo git submodules initalised
@@ -31,6 +51,7 @@ echo updating submodules
 git submodule update
 echo submodules updated
 
+#add aliases to .bashrc
 BASH_SOURCES="aliases
 bash_customise
 "
