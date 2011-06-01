@@ -8,6 +8,7 @@ if [ $DIRECTORY != $HOME/.vim ]; then
   mv $DIRECTORY $HOME/.vim
   cd $HOME/.vim
 fi
+
 #install enviroment dependacies
 echo installing system dependancies requirements
 sudo apt-get install curl
@@ -15,6 +16,8 @@ sudo apt-get install vim-gnome
 sudo apt-get install ruby
 sudo apt-get install rubygems
 sudo apt-get install irb
+sudo apt-get install g++
+sudo gem install rake
 
 #install rvm
 if [ ! -e $HOME/.rvm ]; then
@@ -51,10 +54,15 @@ echo updating submodules
 git submodule update
 echo submodules updated
 
+#setup plugins that require setup
+. ~/.vim/plugin_setup
+
 #add aliases to .bashrc
 BASH_SOURCES="aliases
 bash_customise
 "
+
+
 for f in $BASH_SOURCES; do
   if  ! grep -Fxq "source ~/.vim/$f" ~/.bashrc 
   then

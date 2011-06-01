@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/.vim/bundle/snipmate-snippets
+rake deploy_local
+cd ~/.vim
