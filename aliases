@@ -1,0 +1,12 @@
+#jruby aliases
+alias jgem='jruby -S gem'
+alias jirb='jruby -S irb'
+alias jrake='jruby -S rake'
+alias jbundle='jruby -S bundle'
+
+#git aliases
+alias gcommit='git commit'
+alias gpull='git push'
+alias gcheckout='git checkout'
+alias gpush='git push'
+alias gstatus='git status'

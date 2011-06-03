@@ -1,0 +1,5 @@
+run commands below to setup dev environment
+
+sudo apt-get install git
+git clone git@github.com:pythonandchips/vim_config.git ~/.vim
+bash ~/.vim/Install

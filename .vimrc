@@ -12,8 +12,8 @@ set nocompatible
 let mapleader = ","
 let maplocalleader = ","
 
+let g:ackprg="ack-grep -H --nocolor --nogroup  --column"
 set grepprg=/usr/bin/ack
-
 set autowrite
 set ruler
 set nu
@@ -49,6 +49,9 @@ nnoremap <Leader>r G=gg<C-o><C-o>
 nnoremap <Leader>P "+p<CR>
 nnoremap <Leader>Y "+y<CR>
 nnoremap <Leader>YY "+yy<CR>
+map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
+map <silent> <LocalLeader>rc :RunRubyFocusedContext<CR>
+map <silent> <LocalLeader>rt :RunRubyFocusedUnitTest<CR>
 "diff options
 :set diffopt+=iwhite
 autocmd! bufwritepost .vimrc source ~/.vimrc

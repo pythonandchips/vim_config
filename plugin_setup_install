@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FILES=~/.vim/plugin_setup/*_install
+for f in $FILES
+do
+  echo "processing file $f"
+  bash $f
+done
+
