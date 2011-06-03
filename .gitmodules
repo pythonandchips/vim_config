@@ -31,3 +31,6 @@
 [submodule "bundle/autotag"]
 	path = bundle/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
+[submodule "bundle/coffeescript"]
+	path = bundle/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
