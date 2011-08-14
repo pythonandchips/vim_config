@@ -1,3 +1,9 @@
 [user]
 	name = Colin Gemmell
 	email = pythonandchips@gmail.com
+[diff]
+  external = kdiff3
+[pager]
+  diff =
+[merge]
+	tool = kdiff3
