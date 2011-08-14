@@ -37,4 +37,6 @@
 [submodule "bundle/ruby_focused_unit_test"]
 	path = bundle/ruby_focused_unit_test
 	url = https://github.com/pythonandchips/ruby_focused_unit_test_vim.git
->>>>>>> 80053fb5f317b44394f9428c4e47433af37ba52d
+[submodule "bundle/vimclojure"]
+	path = bundle/vimclojure
+	url = https://github.com/jondistad/vimclojure.git

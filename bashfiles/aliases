@@ -10,3 +10,12 @@ alias gpull='git push'
 alias gcheckout='git checkout'
 alias gpush='git push'
 alias gstatus='git status'
+
+#ls aliases
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+#grep aliases
+alias grep='grep --color=auto'

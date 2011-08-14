@@ -35,6 +35,10 @@ set showmatch
 set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
 set shell=/bin/sh
 set splitright
+set backupdir=/home/cgemmell/.vim_backup
+set noerrorbells
+set novisualbell
+set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
 map <Leader>e :e. <CR>
 map <Leader>E :E  <CR>
 map <C-H> <C-W>h
@@ -49,11 +53,31 @@ nnoremap <Leader>r G=gg<C-o><C-o>
 nnoremap <Leader>P "+p<CR>
 nnoremap <Leader>Y "+y<CR>
 nnoremap <Leader>YY "+yy<CR>
+vnoremap <silent>[ ^
+vnoremap <silent>] $
+nnoremap <silent>[ ^
+nnoremap <silent>] $
+
 map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
 map <silent> <LocalLeader>rc :RunRubyFocusedContext<CR>
 map <silent> <LocalLeader>rt :RunRubyFocusedUnitTest<CR>
 "diff options
 :set diffopt+=iwhite
+
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
 autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd BufWritePost,FileWritePost * silent call AutoTag ()
 "set colour scheme

@@ -1,10 +1,3 @@
-alias gcommit='git commit'
-alias gpull='git push'
-alias gcheckout='git checkout'
-alias gpush='git push'
-alias gstatus='git status'
-
-
 function parse_git_dirty {
     [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
 }

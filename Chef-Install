@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#move install dir to .vim folder
+DIRECTORY=$(cd `dirname $0` && pwd)
+if [ $DIRECTORY != $HOME/.vim ]; then
+  echo moving directory to .vim folder
+  rm .vim -fr
+  mv $DIRECTORY $HOME/.vim
+  cd $HOME/.vim
+fi
+
+#setup dotfiles
+FILES=".gemrc
+.irbrc
+.vimrc
+.gitconfig
+.bashrc
+"
+
+for f in $FILES; do
+  rm $HOME/$f
+  echo adding link to $f
+  ln -s $HOME/.vim/$f $HOME/$f
+done
+
+#setup vim plugins
+echo initalising git submodules
+git submodule init
+echo git submodules initalised
+
+echo updating submodules
+git submodule update
+echo submodules updated
+
+#setup plugins that require setup
+. ~/.vim/plugin_setup
+
+echo install complete
