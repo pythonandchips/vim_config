@@ -33,6 +33,6 @@ git submodule update
 echo submodules updated
 
 #setup plugins that require setup
-. ~/.vim/plugin_setup
+. ~/.vim/plugin_setup_install
 
 echo install complete
