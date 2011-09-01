@@ -51,7 +51,7 @@ map <Down> :cnext <CR>
 map <silent> <LocalLeader>w <ESC>:w<CR>
 nnoremap <Leader>r G=gg<C-o><C-o>
 nnoremap <Leader>P "+p<CR>
-nnoremap <Leader>Y "+y<CR>
+vnoremap <Leader>Y "+y<CR>
 nnoremap <Leader>YY "+yy<CR>
 vnoremap <silent>[ ^
 vnoremap <silent>] $

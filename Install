@@ -34,6 +34,7 @@ FILES=".gemrc
 .irbrc
 .vimrc
 .gitconfig
+.gitignore
 "
 
 for f in $FILES; do
@@ -63,7 +64,7 @@ bash_customise
 "
 
 for f in $BASH_SOURCES; do
-  if  ! grep -Fxq "source ~/.vim/$f" ~/.bashrc 
+  if  ! grep -Fxq "source ~/.vim/$f" ~/.bashrc
   then
     echo "source ~/.vim/$f" >> ~/.bashrc
   fi

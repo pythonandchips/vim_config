@@ -7,3 +7,5 @@
   diff =
 [merge]
 	tool = kdiff3
+[core]
+	excludesfile = /home/cgemmell/.gitignore
