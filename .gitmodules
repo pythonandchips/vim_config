@@ -34,15 +34,12 @@
 [submodule "bundle/coffeescript"]
 	path = bundle/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/ruby_focused_unit_test"]
-	path = bundle/ruby_focused_unit_test
-	url = https://github.com/pythonandchips/ruby_focused_unit_test_vim.git
 [submodule "bundle/vimclojure"]
 	path = bundle/vimclojure
 	url = https://github.com/jondistad/vimclojure.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/conquw"]
-	path = bundle/conquw
+[submodule "bundle/conque"]
+	path = bundle/conque
 	url = https://github.com/rson/vim-conque.git
