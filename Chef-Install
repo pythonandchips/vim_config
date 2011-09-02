@@ -15,6 +15,7 @@ FILES=".gemrc
 .vimrc
 .gitconfig
 .bashrc
+.gitignore
 "
 
 for f in $FILES; do
