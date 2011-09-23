@@ -7,9 +7,6 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "bundle/ruby-refactoring"]
-	path = bundle/ruby-refactoring
-	url = https://github.com/ecomba/vim-ruby-refactoring.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/tsaleh/vim-matchit.git
@@ -43,3 +40,12 @@
 [submodule "bundle/conque"]
 	path = bundle/conque
 	url = https://github.com/rson/vim-conque.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/vim-ruby-refactoring"]
+	path = bundle/vim-ruby-refactoring
+	url = git@github.com:pythonandchips/vim-ruby-refactoring.git
+[submodule "bundle/abolish"]
+	path = bundle/abolish
+	url = git://github.com/tpope/vim-abolish.git

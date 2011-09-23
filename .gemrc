@@ -1,8 +1,9 @@
---- 
+---
 gem: --no-ri --no-rdoc
-:sources: 
+:sources:
 - http://rubygems.org/
 - http://gems.therepairline.co.uk
+- http://gems.github.com
 :benchmark: false
 :backtrace: false
 :verbose: true
