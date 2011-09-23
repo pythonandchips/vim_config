@@ -58,6 +58,7 @@ vnoremap <silent>] $
 nnoremap <silent>[ ^
 nnoremap <silent>] $
 
+vmap <LocalLeader>f :s/_\([a-z]\)/\u\1/<CR>gUl:noh<cr>
 map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
 map <silent> <LocalLeader>rc :RunRubyFocusedContext<CR>
 map <silent> <LocalLeader>rt :RunRubyFocusedUnitTest<CR>
