@@ -31,8 +31,9 @@ set expandtab
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
+set guioptions-=l
+set guioptions-=b
 set showmatch
-set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
 set shell=/bin/sh
 set splitright
 set backupdir=/home/cgemmell/.vim_backup
@@ -57,6 +58,9 @@ vnoremap <silent>[ ^
 vnoremap <silent>] $
 nnoremap <silent>[ ^
 nnoremap <silent>] $
+nnoremap <F5> :GundoToggle<CR>
+nnoremap <Leader>o o<ESC>
+nnoremap <Leader>O O<ESC>
 
 vmap <LocalLeader>f :s/_\([a-z]\)/\u\1/<CR>gUl:noh<cr>
 map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
