@@ -61,6 +61,7 @@ nnoremap <silent>] $
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <Leader>o o<ESC>
 nnoremap <Leader>O O<ESC>
+inoremap ` <ESC>
 
 map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
 map <silent> <LocalLeader>rc :RunRubyFocusedContext<CR>
