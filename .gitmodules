@@ -49,3 +49,21 @@
 [submodule "bundle/abolish"]
 	path = bundle/abolish
 	url = git://github.com/tpope/vim-abolish.git
+[submodule "available-bundles/gundo-valloric"]
+	path = available-bundles/gundo-valloric
+	url = https://github.com/Valloric/gundo.vim.git
+[submodule "available-bundles/vim-rake"]
+	path = available-bundles/vim-rake
+	url = https://github.com/tpope/vim-rake.git
+[submodule "available-bundles/blockle"]
+	path = available-bundles/blockle
+	url = https://github.com/vim-scripts/blockle.vim.git
+[submodule "available-bundles/auto-pairs"]
+	path = available-bundles/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "available-bundles/simple-commenter"]
+	path = available-bundles/simple-commenter
+	url = https://github.com/c9s/simple-commenter.vim.git
+[submodule "available-bundles/vim-endwise"]
+	path = available-bundles/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
