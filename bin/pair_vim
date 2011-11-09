@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm ~/.vim/.vimrc
+ln -s ~/.vim/pair_vimrc ~/.vim/.vimrc

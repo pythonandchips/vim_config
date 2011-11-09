@@ -49,3 +49,6 @@
 [submodule "available-bundle/abolish"]
 	path = available-bundle/abolish
 	url = git://github.com/tpope/vim-abolish.git
+[submodule "available-bundle/vim-rake"]
+	path = available-bundle/vim-rake
+	url = https://github.com/tpope/vim-rake.git
