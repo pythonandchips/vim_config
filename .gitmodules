@@ -1,54 +1,69 @@
-[submodule "available-bundle/colorschemes"]
-	path = available-bundle/colorschemes
+[submodule "available-bundles/colorschemes"]
+	path = available-bundles/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "available-bundle/ack"]
-	path = available-bundle/ack
+[submodule "available-bundles/ack"]
+	path = available-bundles/ack
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "available-bundle/rails"]
-	path = available-bundle/rails
+[submodule "available-bundles/rails"]
+	path = available-bundles/rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "available-bundle/matchit"]
-	path = available-bundle/matchit
+[submodule "available-bundles/matchit"]
+	path = available-bundles/matchit
 	url = https://github.com/tsaleh/vim-matchit.git
-[submodule "available-bundle/snipmate"]
-	path = available-bundle/snipmate
+[submodule "available-bundles/snipmate"]
+	path = available-bundles/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "available-bundle/supertab"]
-	path = available-bundle/supertab
+[submodule "available-bundles/supertab"]
+	path = available-bundles/supertab
 	url = https://github.com/tsaleh/vim-supertab.git
-[submodule "available-bundle/snipmate-snippets"]
-	path = available-bundle/snipmate-snippets
+[submodule "available-bundles/snipmate-snippets"]
+	path = available-bundles/snipmate-snippets
 	url = https://github.com/scrooloose/snipmate-snippets.git
-[submodule "available-bundle/cucumber"]
-	path = available-bundle/cucumber
+[submodule "available-bundles/cucumber"]
+	path = available-bundles/cucumber
 	url = git@github.com:pythonandchips/vim-cucumber.git
-[submodule "available-bundle/command-t"]
-	path = available-bundle/command-t
+[submodule "available-bundles/command-t"]
+	path = available-bundles/command-t
 	url = https://github.com/wincent/Command-T.git
-[submodule "available-bundle/autotag"]
-	path = available-bundle/autotag
+[submodule "available-bundles/autotag"]
+	path = available-bundles/autotag
 	url = https://github.com/vim-scripts/AutoTag.git
-[submodule "available-bundle/coffeescript"]
-	path = available-bundle/coffeescript
+[submodule "available-bundles/coffeescript"]
+	path = available-bundles/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "available-bundle/vimclojure"]
-	path = available-bundle/vimclojure
+[submodule "available-bundles/vimclojure"]
+	path = available-bundles/vimclojure
 	url = https://github.com/jondistad/vimclojure.git
-[submodule "available-bundle/vim-fugitive"]
-	path = available-bundle/vim-fugitive
+[submodule "available-bundles/vim-fugitive"]
+	path = available-bundles/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "available-bundle/conque"]
-	path = available-bundle/conque
+[submodule "available-bundles/conque"]
+	path = available-bundles/conque
 	url = https://github.com/rson/vim-conque.git
-[submodule "available-bundle/gundo"]
-	path = available-bundle/gundo
+[submodule "available-bundles/gundo"]
+	path = available-bundles/gundo
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "available-bundle/vim-ruby-refactoring"]
-	path = available-bundle/vim-ruby-refactoring
+[submodule "available-bundles/vim-ruby-refactoring"]
+	path = available-bundles/vim-ruby-refactoring
 	url = git@github.com:pythonandchips/vim-ruby-refactoring.git
-[submodule "available-bundle/abolish"]
-	path = available-bundle/abolish
+[submodule "available-bundles/abolish"]
+	path = available-bundles/abolish
 	url = git://github.com/tpope/vim-abolish.git
-[submodule "available-bundle/vim-rake"]
-	path = available-bundle/vim-rake
+[submodule "available-bundles/gundo-valloric"]
+	path = available-bundles/gundo-valloric
+	url = https://github.com/Valloric/gundo.vim.git
+[submodule "available-bundles/vim-rake"]
+	path = available-bundles/vim-rake
 	url = https://github.com/tpope/vim-rake.git
+[submodule "available-bundles/blockle"]
+	path = available-bundles/blockle
+	url = https://github.com/vim-scripts/blockle.vim.git
+[submodule "available-bundles/auto-pairs"]
+	path = available-bundles/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "available-bundles/simple-commenter"]
+	path = available-bundles/simple-commenter
+	url = https://github.com/c9s/simple-commenter.vim.git
+[submodule "available-bundles/vim-endwise"]
+	path = available-bundles/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
