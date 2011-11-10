@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ~/.vim/bundle/snipmate-snippets
+cd ~/.vim/available_bundles/snipmate-snippets
 rake deploy_local
 cd ~/.vim
