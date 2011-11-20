@@ -67,3 +67,6 @@
 [submodule "available_bundles/vim-endwise"]
   path = available_bundles/vim-endwise
   url = https://github.com/tpope/vim-endwise.git
+[submodule "available_bundles/vim-markdown"]
+	path = available_bundles/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
