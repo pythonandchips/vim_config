@@ -58,3 +58,12 @@
 [submodule "available_bundles/auto-tag"]
 	path = available_bundles/auto-tag
 	url = https://github.com/vim-scripts/AutoTag.git
+[submodule "available_bundles/simple-commenter"]
+  path = available_bundles/simple-commenter
+  url = https://github.com/c9s/simple-commenter.vim.git
+[submodule "available_bundles/vim-blockle"]
+  path = available_bundles/vim-blockle
+  url = https://github.com/jgdavey/vim-blockle.git
+[submodule "available_bundles/vim-endwise"]
+  path = available_bundles/vim-endwise
+  url = https://github.com/tpope/vim-endwise.git
