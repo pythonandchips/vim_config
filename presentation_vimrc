@@ -41,6 +41,7 @@ set splitright
 set backupdir=/home/cgemmell/.vim_backup
 set noerrorbells
 set novisualbell
+set guifont=Monospace\ 15
 set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
 map <Leader>e :e. <CR>
 map <Leader>E :E  <CR>
@@ -86,4 +87,4 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd BufWritePost,FileWritePost * silent call AutoTag ()
 "set colour scheme
-colorscheme vividchalk
+colorscheme railscasts

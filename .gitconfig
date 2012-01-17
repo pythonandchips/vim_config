@@ -20,3 +20,6 @@
 
 [push]
   default = current
+
+[github]
+  user = pythonandchips
